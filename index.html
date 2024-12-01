@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Login</title>
+    <link
+      href="imges/76a4ed4a65d99ed8b143d349346d50c8.png"
+      class="fav-icon"
+      rel="icon"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <div id="registration-form" class="form">
+          <div class="btn-box">
+            <!-- <a href="#" onclick="toggleForms()">Register</a> -->
+            <!-- <button  id="login">Sing In</button> -->
+            <h2 class="btn btn-1">Register</h2>
+            <!-- <button  class="btn btn-2" id="register">Sing Up</button> -->
+          </div>
+
+          <div  class="input-box">
+            <input
+            class="inp-one"
+            type="text"
+            
+            placeholder="UserName"
+            required
+          />
+            <ion-icon name="person-outline" class="icon"></ion-icon>
+            </div>
+      
+
+
+
+        <div  class="input-box">
+          <input
+          class="inp-one"
+          type="text"
+          id="reg-email"
+          placeholder=" Email"
+          required
+        />
+
+        <ion-icon name="mail-outline" class="icon"></ion-icon>
+      </div>
+
+
+
+    
+
+
+         
+          <!-- <input class="inp-two" type="text" id="reg-na" placeholder=" Username"> -->
+         <div  class="input-box" >
+          <input
+          class="inp-three"
+          type="password"
+          id="reg-password"
+          placeholder=" Password"
+          required
+        />
+        <ion-icon name="lock-closed-outline" class="icon" ></ion-icon>
+         </div>
+
+          <!-- <button onclick="registerUser()">Register</button>  -->
+
+          <div class="input-box">
+            <button onclick="registerUser()" class="inputs submit-btn">
+              <span>Sign Up</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+          <p id="reg-error" class="error"></p>
+
+          <p>
+            Already have an account?
+            <a href="#" class="log-reg" id="login" onclick="toggleForms()"
+              >Login</a
+            >
+          </p>
+
+          <div class="social-login">
+            <div class="social-login-box">
+              <a href="https://www.google.com"
+                ><ion-icon
+                  name="logo-google"
+                  class="socil-login-icon"
+                ></ion-icon
+              ></a>
+            </div>
+            <div class="social-login-box">
+              <a href="https://www.facebook.com/">
+                <ion-icon
+                  name="logo-facebook"
+                  class="socil-login-icon"
+                ></ion-icon
+              ></a>
+            </div>
+            <div class="social-login-box">
+              <a href="https://x.com/">
+                <ion-icon
+                  name="logo-twitter"
+                  class="socil-login-icon"
+                ></ion-icon
+              ></a>
+            </div>
+            <div class="social-login-box">
+              <a href="https://github.com/"
+                ><ion-icon
+                  name="logo-github"
+                  class="socil-login-icon"
+                ></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="login-form" class="form hidden">
+          <h2 class="btn btn-2">Login</h2>
+
+          <div  class="input-box">
+            <input
+            class="inp-one"
+            type="text"
+            id="login-email"
+            placeholder="Email"
+            required
+          />
+            <ion-icon name="person-outline" class="icon"></ion-icon>
+            </div>
+
+      
+         <div class="input-box">
+          <input
+          class="inp-two"
+          type="password"
+          id="login-password"
+          placeholder=" Password"
+          required
+        />
+        <ion-icon name="lock-closed-outline" class="icon" ></ion-icon>
+         </div>
+          <!-- <button onclick="loginUser()">Login</button> -->
+          <div class="input-box">
+            <button onclick="loginUser()" class="inputs submit-btn">
+              <span>Sign In</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+          <p id="login-error" class="error"></p>
+          <p>
+            Don't have an account?
+            <a class="log-reg" href="#" id="register" onclick="toggleForms()"
+              >Register</a
+            >
+          </p>
+
+          <div class="social-login">
+            <div class="social-login-box">
+              <a href="https://www.google.com"
+                ><ion-icon
+                  name="logo-google"
+                  class="socil-login-icon"
+                ></ion-icon
+              ></a>
+            </div>
+            <div class="social-login-box">
+              <a href="https://www.facebook.com/">
+                <ion-icon
+                  name="logo-facebook"
+                  class="socil-login-icon"
+                ></ion-icon
+              ></a>
+            </div>
+            <div class="social-login-box">
+              <a href="https://x.com/">
+                <ion-icon
+                  name="logo-twitter"
+                  class="socil-login-icon"
+                ></ion-icon
+              ></a>
+            </div>
+            <div class="social-login-box">
+              <a href="https://github.com/"
+                ><ion-icon
+                  name="logo-github"
+                  class="socil-login-icon"
+                ></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

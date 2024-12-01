@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  box-shadow: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection{
+  background-color: #433251;
+  color: #eeee;
+}
+
+
+body {
+  background: url(../imges/original-0d122916cf1c43209466f2c34c715367.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  padding: 0 20px;
+  color: #fff;
+  animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg{
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.input-box .icon{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  width: 17px;
+  height: 17px;
+}
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  width: 450px;
+  height: 500px;
+  border: 3px solid rgba(255, 255, 255, 0.199);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+}
+
+.btn-box {
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.btn {
+  font-weight: 500;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-1 {
+  background: #21264d;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+h2 {
+  text-align: center;
+}
+.inp-one {
+  margin-bottom: 15px;
+}
+.inp-two {
+  margin-bottom: 15px;
+}
+.inp-three {
+  margin-bottom: 15px;
+}
+input {
+  display: flex;
+
+  font-weight: 500;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #21264d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.input-box {
+  position: relative;
+}
+
+.inputs {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+  gap: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: #b31111;
+
+  font-size: 15px;
+}
+
+.log-reg {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 500;
+  padding: 8px 30px;
+  border: none;
+  width: 30px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  transition: 0.2s;
+}
+
+.log-reg:hover {
+  background: #21264d;
+  color: #eeee;
+}
+
+.container-home {
+  background: url(../imges/original-0d122916cf1c43209466f2c34c715367.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-wel h1 {
+  /* position: relative; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  left:3%;
+  text-align: center;
+  margin-top: 50%;
+  /* width: 580px; */
+  height: 80px;
+  border: 3px solid rgba(255, 255, 255, 0.199);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  
+}
+
+.submit-btn-hom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/* position: absolute; */
+  gap: 10px;
+  background: #21264d;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 50px;
+  left: 25%;
+}
+.input-box-1 {
+  /* position: relative; */
+  margin-top: 40px;
+}
+
+.input {
+  width: 50%;
+  height: 30px;
+  margin: 10px 0;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn-hom:hover {
+  gap: 15px;
+  background-color: #433251;
+
+}
+
+.social-login {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-login-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.socil-login-icon a {
+  width: 24px;
+}
+
+.social-login-box a:hover {
+  transform: scale(0.9);
+  color: #21264d;
+}

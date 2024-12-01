@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="imges/f5b03edd92e7bad3827e34de0d29ae1b.png"
+      class="fav-icon"
+      rel="icon"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="container-home">
+    <div class="home-wel">
+      <h1>Welcome, <span id="username"></span>!</h1>
+
+      <div class="input-box-1">
+        <button onclick="logoutUser()" class="input submit-btn-hom">
+          <span>Logout</span>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <script>
+      let user = localStorage.getItem("loggedInUser");
+      if (!user) {
+        window.location.href = "index.html";
+      } else {
+        document.getElementById("username").textContent = user;
+      }
+
+      function logoutUser() {
+        localStorage.removeItem("loggedInUser");
+        window.location.href = "index.html";
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
